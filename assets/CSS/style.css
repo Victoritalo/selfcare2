@@ -185,15 +185,31 @@ main {
   color: var(--colorOne);
 }
 
-.sectionInfoRight form, input {
+.sectionInfoRight form, input, button {
   margin-top: 0.5rem;
-  color: var(--colorOne);
+  color: var(--colorFour);
+  border: none;
 }
 
-.sectionInfoRight input, button{
-  /* background-color: red; */
-  height: 2rem;
-  /* position: relative; */
+.sectionInfoRight input {
+  height: 28px;
+  outline: none;
+  width: 20vw;
+  padding: 5px;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: #A8A4A4;
+}
+
+.sectionInfoRight button {
+  border-radius: 0px 5px 5px 0px;
+  height: 38px;
+  width: 10vw;
+  background-color: var(--colorTwo);
+  font-weight: bold;
+  color: var(--colorFive);
 }
 
 .footerConfig {
@@ -203,6 +219,13 @@ main {
   align-items: center;
   padding: 1rem;
 }
+
+.footerConfig img {
+  height: 30px;
+  width: 30px;
+}
+
+
 /* MEDIA SCREEN @MOBILE */
 
 @media screen and (max-width: 768px) {
