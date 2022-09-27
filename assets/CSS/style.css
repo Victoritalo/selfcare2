@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+:root {
+  --colorOne: #161616;
+  --colorTwo: #5ca720;
+  --colorThree: #e5e5e5;
+  --colorFour: #a5a1a1;
+  --colorFive: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--colorThree);
+  font-family: lato;
+  font-size: 20px;
+  color: var(--colorOne);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* HEADER STYLE LEFT SIDE*/
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  transition: transform 0.2s;
+}
+
+.search-txt {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-customization {
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.logo-customization img {
+  height: 20px;
+  width: 20px;
+}
+
+.logo-customization a {
+  color: var(--colorOne);
+  text-decoration: none;
+}
+
+nav li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* BANNER */
+.banner-slider img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+
+main {
+  padding: 1.2rem;
+}
+
+.promo-txt {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  border-bottom: 0.1px solid #cfcdcd;
+  padding: 1.2rem;
+  font-size: 15px;
+}
+
+.left-text {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+}
+
+.container .card {
+  width: 100%;
+  background-color: var(--colorThree);
+  cursor: pointer;
+}
+
+.container .card .image-box {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container .card .image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.container .card .image-box img:hover {
+  transform: scale(1.2);
+  /* cursor: pointer; */
+}
+
+.container .card .content {
+  padding: 5px;
+}
+
+.productName h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 5px 0;
+}
+
+.price_item p {
+  font-size: 15px;
+}
+.price_item .priceBox {
+  font-size: 20px;
+  margin: 5px;
+  font-weight: bolder;
+  color: var(--colorTwo);
+}
+.rating {
+  font-size: 15px;
+}
+
+.container .card .content .price_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* MEDIA SCREEN @MOBILE */
+
+@media screen and (max-width: 768px) {
+  .menu,
+  .logo-customization {
+    font-size: 18px;
+  }
+
+  .menu li img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .banner-slider img {
+    display: block;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+}
