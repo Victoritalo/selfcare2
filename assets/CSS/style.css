@@ -169,6 +169,40 @@ main {
   align-items: center;
 }
 
+/* Footer styling */
+.sectionInfo {
+  background-color: var(--colorThree);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid var(--colorFour);
+  border-bottom: 1px solid var(--colorFour);
+}
+.sectionInfoLeft a, li {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: var(--colorOne);
+}
+
+.sectionInfoRight form, input {
+  margin-top: 0.5rem;
+  color: var(--colorOne);
+}
+
+.sectionInfoRight input, button{
+  /* background-color: red; */
+  height: 2rem;
+  /* position: relative; */
+}
+
+.footerConfig {
+  background-color: var(--colorThree);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
 /* MEDIA SCREEN @MOBILE */
 
 @media screen and (max-width: 768px) {
